@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,76 +16,114 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-x5-Fof">
-                                <rect key="frame" x="16" y="238" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="it's this one"/>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fjg-qK-bRL">
-                                <rect key="frame" x="280" y="238" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vb9-Nh-ifU">
+                                <rect key="frame" x="27.5" y="29" width="265" height="69"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2U-uA-CV4">
-                                        <rect key="frame" x="0.0" y="0.0" width="79" height="30"/>
-                                        <state key="normal" title="it's this one"/>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-7z-KVj">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="265" id="5hW-Y8-i95"/>
+                                            <constraint firstAttribute="height" constant="21" id="NaV-hk-lhj"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Chering...is..Caring ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.0" blue="0.92247806813325717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="21" name="Courier-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="but can you tell which one is the pop diva CHER??" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-lc-zhl">
+                                        <rect key="frame" x="42" y="29" width="181" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="nVy-6q-s4S"/>
+                                            <constraint firstAttribute="width" constant="181" id="tNt-GX-UKY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <color key="textColor" red="1" green="0.90635850269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="1" green="0.224073771" blue="0.83693933480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-1" height="0.0"/>
+                                    </label>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hound" translatesAutoresizingMaskIntoConstraints="NO" id="ZiG-UB-Ny1">
-                                <rect key="frame" x="16" y="281" width="155" height="236"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cher" translatesAutoresizingMaskIntoConstraints="NO" id="Qd2-jY-aOG">
+                                <rect key="frame" x="16" y="106" width="138" height="206"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZiG-UB-Ny1" secondAttribute="height" multiplier="155:236" id="rHX-VR-PFo"/>
+                                    <constraint firstAttribute="height" constant="206" id="3us-FI-xYU"/>
+                                    <constraint firstAttribute="width" constant="138" id="R8B-OG-cQR"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cher" translatesAutoresizingMaskIntoConstraints="NO" id="Qd2-jY-aOG">
-                                <rect key="frame" x="205" y="281" width="154" height="236"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzQ-x5-Fof">
+                                <rect key="frame" x="16" y="312" width="85" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Qd2-jY-aOG" secondAttribute="height" multiplier="77:118" id="eQh-d2-4kZ"/>
+                                    <constraint firstAttribute="width" constant="85" id="VTt-fz-Lao"/>
+                                </constraints>
+                                <state key="normal" title="it's this one"/>
+                                <connections>
+                                    <action selector="correct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obV-2l-Eiu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hound" translatesAutoresizingMaskIntoConstraints="NO" id="ZiG-UB-Ny1">
+                                <rect key="frame" x="166" y="106" width="138" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="DFd-gH-ANP"/>
+                                    <constraint firstAttribute="height" constant="206" id="c4c-AS-24T"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-7z-KVj">
-                                <rect key="frame" x="55" y="52" width="265" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Chering...is..Caring">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="0.0" blue="0.92247806813325717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="21" name="Courier-Bold"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="one of the images below is of the pop diva CHER! &amp; the other is an afghan hound...a type of dog." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doO-zx-EYg">
-                                <rect key="frame" x="40" y="95" width="302" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="but can you figure out which one shows Cher??" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciM-lc-zhl">
-                                <rect key="frame" x="20" y="157" width="343" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="1" blue="0.15156431479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-ze-6rN">
-                                <rect key="frame" x="146" y="525" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IL0-26-Cmr">
+                                <rect key="frame" x="224" y="312" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="lVc-Ln-Pbr"/>
+                                </constraints>
+                                <state key="normal" title="it's this one"/>
+                                <connections>
+                                    <action selector="correct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgy-tL-q8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfT-ze-6rN">
+                                <rect key="frame" x="118.5" y="425" width="83" height="30"/>
                                 <state key="normal" title="haha RESET"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icZ-X7-rcc"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.78396707480000005" green="0.60680010399999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vb9-Nh-ifU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="0LN-0J-CBe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IfT-ze-6rN" secondAttribute="bottom" constant="25" id="EjT-d5-ghi"/>
+                            <constraint firstItem="Qd2-jY-aOG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ISq-MT-3YV"/>
+                            <constraint firstItem="Qd2-jY-aOG" firstAttribute="top" secondItem="vb9-Nh-ifU" secondAttribute="bottom" constant="8" id="S2f-cN-EYE"/>
+                            <constraint firstItem="Qd2-jY-aOG" firstAttribute="leading" secondItem="fzQ-x5-Fof" secondAttribute="leading" id="VoC-tA-E2f"/>
+                            <constraint firstItem="Qd2-jY-aOG" firstAttribute="top" secondItem="ZiG-UB-Ny1" secondAttribute="top" id="ZvF-M3-Yzm"/>
+                            <constraint firstItem="ZiG-UB-Ny1" firstAttribute="trailing" secondItem="IL0-26-Cmr" secondAttribute="trailing" id="bfb-sr-ebR"/>
+                            <constraint firstItem="fzQ-x5-Fof" firstAttribute="top" secondItem="Qd2-jY-aOG" secondAttribute="bottom" id="djF-AP-lNq"/>
+                            <constraint firstItem="IfT-ze-6rN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMk-Ip-CmA"/>
+                            <constraint firstItem="ZiG-UB-Ny1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="l2u-uv-Qlk"/>
+                            <constraint firstItem="fzQ-x5-Fof" firstAttribute="top" secondItem="IL0-26-Cmr" secondAttribute="top" id="mTw-iE-BFZ"/>
+                            <constraint firstItem="vb9-Nh-ifU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="poP-Ch-BQO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="IL0-26-Cmr" id="M8y-zj-I3o"/>
+                        <outlet property="button2" destination="fzQ-x5-Fof" id="lxC-Mk-arj"/>
+                        <outlet property="cher" destination="Qd2-jY-aOG" id="GuL-Cn-Piz"/>
+                        <outlet property="heading" destination="Y5o-7z-KVj" id="TIi-jn-wSx"/>
+                        <outlet property="hound" destination="ZiG-UB-Ny1" id="bXE-4f-amd"/>
+                        <outlet property="question" destination="ciM-lc-zhl" id="7LT-Cz-l0k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-84.375" y="130"/>
         </scene>
     </scenes>
     <resources>
