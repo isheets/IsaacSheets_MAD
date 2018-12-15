@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sheets_Final</string>
+    <string name="build_my_pizza">Build My Pizza</string>
+    <string name="name_your_pizza">Name your pizza</string>
+    <string name="broccoli">Broccoli</string>
+    <string name="peppers">Peppers</string>
+    <string name="mushrooms">Mushrooms</string>
+    <string name="onions">Onions</string>
+    <string name="white">White</string>
+    <string name="red">Red</string>
+    <string name="gluten_free">Gluten-free?</string>
+    <string name="pizza">Pizza!</string>
+</resources>
